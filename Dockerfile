@@ -70,6 +70,12 @@ RUN apt-get install -y curl
 #Install GCC
 RUN add-apt-repository ppa:eugenesan/ppa && apt-get update && apt-get install gcc-4.9 -y && ln -s /usr/bin/gcc-4.9 /usr/bin/gcc
 
+#Install Firefox
+RUN apt-get update && apt-get install -y firefox
+
+#Install git
+RUN apt-get install -y git
+
 #RUN sshd and start OVS 
 CMD service ssh start && bash
 
