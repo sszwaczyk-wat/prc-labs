@@ -76,7 +76,16 @@ RUN apt-get update && apt-get install -y firefox
 #Install git
 RUN apt-get install -y git
 
-#RUN sshd and start OVS 
+#Install gedit
+RUN apt-get install -y gedit
+
+#Install make
+RUN apt-get install -y make
+
+#Install g++
+RUN apt-get install -y g++
+
+#RUN sshd
 CMD service ssh start && bash
 
 
