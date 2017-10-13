@@ -85,6 +85,9 @@ RUN apt-get install -y make
 #Install g++
 RUN apt-get install -y g++
 
+#Install gdb
+RUN apt-get install -y gdb
+
 #RUN sshd
 CMD service ssh start && bash
 
