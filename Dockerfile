@@ -88,6 +88,9 @@ RUN apt-get install -y g++
 #Install gdb
 RUN apt-get install -y gdb
 
+#Install sendip
+RUN apt-get install -y sendip
+
 #RUN sshd
 CMD service ssh start && bash
 
