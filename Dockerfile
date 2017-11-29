@@ -91,6 +91,9 @@ RUN apt-get install -y gdb
 #Install sendip
 RUN apt-get install -y sendip 
 
+#Install telnet
+RUN apt-get install -y telnet
+
 #RUN sshd
 CMD service ssh start && sysctl net.ipv6.conf.all.disable_ipv6=0 && bash
 
